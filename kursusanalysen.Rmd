@@ -198,7 +198,7 @@ meta_data %>%
 
 ## Antal tilmeldte over årene
 
-```{r antal-tilmeldte echo = FALSE}
+```{r antal-tilmeldte, echo = FALSE}
 tilmeldinger %>% 
   distinct(booking_id, .keep_all = TRUE) %>% 
   select(event_id, tilm_type, booking_id) %>% 
@@ -609,8 +609,9 @@ at blive tilføjet diverse regneark.
 tilmeldinger %>% 
   select(event_id, question, answer, køn, registered_date) %>% 
   filter(!is.na(question)) %>% 
-  filter(year(registered_date) == 2024) %>% view()
+  filter(year(registered_date) == 2025) %>% 
   filter(question == "Faculty") %>% 
+  filter(!is.na(answer)) |> 
   group_by(year(registered_date)) %>% 
   count(answer)
 ```
