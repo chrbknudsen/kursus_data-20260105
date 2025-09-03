@@ -193,17 +193,7 @@ meta_data %>%
 ```
 
 
-Af en eller anden årsag er I meget glade for lagkagediagrammer. Så her er der et.
 
-```{r}
-meta_data %>% 
-  distinct(id, .keep_all = TRUE) %>% 
-  count(år = year(start), name = "antal") %>% 
-  ggplot(aes(x = "", y = antal, fill = factor(år))) +
-  geom_bar(stat = "identity", width = 1) +
-  coord_polar("y", start = 0) +
-  theme_void()
-```
 
 ## Antal tilmeldte over årene
 
