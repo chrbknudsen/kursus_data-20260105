@@ -140,14 +140,15 @@ Men. Der er grænser, for vi kan kun svare på ting som data understøtter svar 
 Vi har pt to tabeller.
 
 Metadata med metadata for kurserne
-```{r}
+```{r glimpse}
 meta_data %>% 
   slice(201) %>% 
   glimpse()
 ```
+
 og tilmeldingsdata for tilmeldingerne:
 
-```{r}
+```{r glimpse-tilmelding}
 tilmeldinger %>% 
   filter(event_id == 4381177) %>% 
   glimpse()
@@ -170,7 +171,7 @@ i kursusmetadata ikke er bedre end dem du selv har lagt ind...
 
 Udvikling i antal kurser over årene:
 
-```{r echo = FALSE}
+```{r antal-aar, echo = FALSE}
 meta_data %>% 
   distinct(id, .keep_all = TRUE) %>% 
   count(år = year(start), name = "antal") %>% 
@@ -179,7 +180,7 @@ meta_data %>%
 
 Eller, grafisk fremstillet:
 
-```{r echo = FALSE}
+```{r antal-aar-graf, echo = FALSE}
 meta_data %>% 
   distinct(id, .keep_all = TRUE) %>% 
   count(år = year(start), name = "antal") %>% 
@@ -197,7 +198,7 @@ meta_data %>%
 
 ## Antal tilmeldte over årene
 
-```{r echo = FALSE}
+```{r antal-tilmeldte echo = FALSE}
 tilmeldinger %>% 
   distinct(booking_id, .keep_all = TRUE) %>% 
   select(event_id, tilm_type, booking_id) %>% 
@@ -215,7 +216,7 @@ venteliste.
 
 ## Antal aktiviteter i kalenderen over tid - opdelt på måned
 
-```{r}
+```{r antal-akt-month}
 meta_data %>% 
   distinct(id, .keep_all = TRUE) %>% 
   mutate(periode = as.yearmon(start)) %>% 
@@ -231,7 +232,7 @@ meta_data %>%
 Vi gæstimerer kønnet ud fra fornavn. I skrivende stund mangler næsten alt historisk
 data.
 
-```{r echo= FALSE}
+```{r sex-dist, echo= FALSE}
 tilmeldinger %>% 
   distinct(booking_id, .keep_all = TRUE) %>% 
   select(event_id, tilm_type, booking_id, køn) %>% 
@@ -251,7 +252,7 @@ tilmeldinger %>%
 
 
 
-```{r echo  = FALSE, warning=FALSE,message=FALSE}
+```{r sex-dist-2, echo  = FALSE, warning=FALSE,message=FALSE}
 tilmeldinger %>% 
   distinct(booking_id, .keep_all = TRUE) %>% 
   select(event_id, tilm_type, booking_id, køn) %>% 
@@ -284,7 +285,7 @@ fuldtidsstuderende kvinder og 13611 fuldtidsstuderende mænd. Svarende til en
 kønsfordeling på `r 13611/(13611+22917)*100` % af det underrepræsenterede køn.
 Den relevante sammenligning er derfor med vores 2023 tal:
 
-```{r}
+```{r chisq-test}
 matrix(c(22917, 13611, 467, 201), ncol = 2) %>% chisq.test()
 ```
 chi-i-anden testen svarer på om der er forskel på kønsfordelingen blandt indskrevne
@@ -313,7 +314,7 @@ den samlede KU-population, men en delmængde af fakulteterne..
 
 der er mange...
 
-```{r echo = FALSE, message=FALSE}
+```{r lille-udvalg, echo = FALSE, message=FALSE}
 tilm_pr_event <- tilmeldinger %>% 
   group_by(event_id, tilm_type) %>% 
   distinct(booking_id, .keep_all = TRUE) %>% 
@@ -323,7 +324,7 @@ tilm_pr_event <- tilmeldinger %>%
 ```
 Så her er et udvalg
 
-```{r}
+```{r mindre-udvalg}
 meta_data %>% 
   mutate(value = 1) %>% 
   pivot_wider(names_from = category_name, values_from = value) %>% 
@@ -340,7 +341,7 @@ Altså - hvor stor en andel af pladserne der udbydes bliver fyldt med tilmelding
 Her skal vi nok fjerne de åbne værksteder først.
 Samlet tabel pr år, opdeling pr måned.
 
-```{r}
+```{r belægningsgrad}
 meta_data %>%
   distinct(id, .keep_all = TRUE) %>% 
   filter(!str_detect(title, "værksted")) %>% 
@@ -363,7 +364,7 @@ meta_data %>%
 
 ## Udvikling i belægningsgrad
 
-```{r}
+```{r udv-belægning}
 meta_data %>%
   distinct(id, .keep_all = TRUE) %>% 
   filter(!str_detect(title, "værksted")) %>% 
@@ -388,7 +389,7 @@ Vi skal stadig overveje at finde en måde at tildele en overordnet kategori på
 software. Der er store mangler i registreringerne, så der skal tænkes...
 
 Nu starter vi med at tælle hvad vi har.
-```{r}
+```{r kategorier}
 meta_data %>% 
   count(category_name) %>% 
   gt() %>% 
@@ -415,7 +416,7 @@ Brugen af kategorier i kalendersystemet er ret ujævn. Så der er tilføjet kate
 pr. automatik. Det lader fortsat en smule tilbage at ønske. Men vi er tæt på nu.
 
 ## Belægningsgrad pr. kategori pr år.
-```{r}
+```{r belæg-kat-year}
 meta_data %>% 
   select(start, category_name, id, seats, seats_taken) %>% 
   filter(!is.na(seats)) %>% 
@@ -438,7 +439,7 @@ Der bør nok forskes i hvad der sker med værkstederne - der er et år hvor der
 
 ## og grafisk
 
-```{r}
+```{r belæg-kat-year-graf}
 meta_data %>% 
   select(start, category_name, id, seats, seats_taken) %>% 
   filter(!is.na(seats)) %>% 
@@ -515,7 +516,7 @@ meta_data %>%
 
 #### sprogene
 
-```{r}
+```{r sprog}
 grupperet_kategori_fyldt_pr_år  %>% 
   filter(kategori == "sprogene") %>% 
   ggplot(aes(år, andel_taken, color = category_name)) +
@@ -527,7 +528,7 @@ grupperet_kategori_fyldt_pr_år  %>%
 
 #### programmerne
 
-```{r}
+```{r programmer}
 grupperet_kategori_fyldt_pr_år  %>% 
   filter(kategori == "programmerne") %>% 
   ggplot(aes(år, andel_taken, color = category_name)) +
@@ -539,7 +540,7 @@ grupperet_kategori_fyldt_pr_år  %>%
 
 #### teknikkerne
 
-```{r}
+```{r teknikker}
 grupperet_kategori_fyldt_pr_år  %>% 
   filter(kategori == "teknikkerne") %>% 
   ggplot(aes(år, andel_taken, color = category_name)) +
@@ -551,7 +552,7 @@ grupperet_kategori_fyldt_pr_år  %>%
 
 #### søjlerne
 
-```{r}
+```{r søjler}
 grupperet_kategori_fyldt_pr_år  %>% 
   filter(kategori == "søjlerne") %>% 
   ggplot(aes(år, andel_taken, color = category_name)) +
@@ -564,7 +565,7 @@ grupperet_kategori_fyldt_pr_år  %>%
 
 ## tilmeldinger - inklusive ventelister som fkt af år og kategori
 
-```{r}
+```{r tilm}
 meta_data %>% 
   right_join(tilm_pr_event, by = c("id" = "event_id")) %>% 
   select(id, start, registrants, waitlist, seats, category_name) %>% 
@@ -585,7 +586,7 @@ meta_data %>%
 
 Nogen særlige ønsker til behandlingen af ventelistetilmeldinger?
 
-```{r, warning=FALSE}
+```{r tilm-udv, warning=FALSE}
 tilmeldinger %>% 
   distinct(booking_id, .keep_all = TRUE) %>% 
   select(booking_id, registered_date) %>% 
@@ -604,7 +605,7 @@ tilmeldinger %>%
 Vi har i begrænset omfang viden om deres faglige baggrund. Og der mangler 
 at blive tilføjet diverse regneark.
 
-```{r}
+```{r fakulteter}
 tilmeldinger %>% 
   select(event_id, question, answer, køn, registered_date) %>% 
   filter(!is.na(question)) %>% 
