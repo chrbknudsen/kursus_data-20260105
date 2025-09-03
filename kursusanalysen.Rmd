@@ -85,17 +85,19 @@ robusthed fremfor tempo!
 <details>
 <summary style="font-size: 1.5em; font-weight: bold; margin-top: 1em;"> Hvad mangler?</summary>
 
-Vi har gemt regneark med tilmeldingsdata i et års tid. Der er data vi kan
+1. Vi har gemt regneark med tilmeldingsdata i et års tid. Der er data vi kan
 bruge til at gæstimere kønnet på de tilmeldte. Og vi har også svar på de spørgsmål
 vi stiller dem. Det skal vi have konsolideret med de data vi henter ind her.
 
-Vi har også gennem en længere periode automatisk indsamlet antallet af 
+2. Vi har også gennem en længere periode automatisk indsamlet antallet af 
 tilmeldinger, blandt andet mhp at lave vores observationslister, hvor vi ser
 på hvor fyldte kurserne er. Her er der også metadata der bør bruges til at berige
 de data vi har her.
 
 Disse to berigelser er relativt enkle at lave. Største udfordring er forskellen
 i præcisionen af det rapporterede tilmeldingstidspunkt. 
+
+Data fra punkt 2 er tilføjet. Der mangler fortsat punkt 1 - regnearkene.
 
 Den svære er at hægte de her data sammen med registreringen af deltagertallene.
 Det bør kunne lade sig gøre, men er ikke helt enkelt, hvis det ikke skal gøres
@@ -191,17 +193,7 @@ meta_data %>%
 ```
 
 
-Af en eller anden årsag er I meget glade for lagkagediagrammer. Så her er der et.
 
-```{r}
-meta_data %>% 
-  distinct(id, .keep_all = TRUE) %>% 
-  count(år = year(start), name = "antal") %>% 
-  ggplot(aes(x = "", y = antal, fill = factor(år))) +
-  geom_bar(stat = "identity", width = 1) +
-  coord_polar("y", start = 0) +
-  theme_void()
-```
 
 ## Antal tilmeldte over årene
 
@@ -498,8 +490,27 @@ grupperet_kategori_fyldt_pr_år %>%
 ```
 Det blev det ikke nødvendigvis mere klart af.
 
-### Det samme, hver for sig
 
+
+```{r}
+meta_data %>%
+  distinct(id, .keep_all = TRUE) %>% 
+  filter(!str_detect(title, "værksted")) %>% 
+  select(title, start, seats, seats_taken) %>% 
+  filter(!is.na(seats_taken)) %>% 
+  mutate(år = year(start),
+        periode = as.yearmon(start)) %>% view()
+  group_by(år) %>% 
+  summarise(grad_fyldt = sum(seats_taken)/sum(seats)) %>% 
+  mutate(grad_fyldt = percent(grad_fyldt, 
+                              accuracy = 1, 
+                              decimal.mark = ",")) %>% 
+  gt() %>% 
+  tab_header(title = "Andel af pladser udbudt, fyldt") %>% 
+  tab_footnote("En række digital humaniora aktiviteter, der har været annonceret, men hvor tilmelding er foregået på anden vis, har ikke registrerede tilmeldinger. Tilsvarende er 'Åbent værksted' fjernet fra oversigten, da der her heller ikke er tilmelding.") %>% 
+  gt::cols_label(år = "År",
+                 grad_fyldt = "Belægningsgrad")
+```
 #### sprogene
 
 ```{r}
@@ -586,6 +597,20 @@ tilmeldinger %>%
 ```
 
 
+## Hvor kommer de fra?
+
+Vi har i begrænset omfang viden om deres faglige baggrund. Og der mangler 
+at blive tilføjet diverse regneark.
+
+```{r}
+tilmeldinger %>% 
+  select(event_id, question, answer, køn, registered_date) %>% 
+  filter(!is.na(question)) %>% 
+  filter(year(registered_date) == 2024) %>% view()
+  filter(question == "Faculty") %>% 
+  group_by(year(registered_date)) %>% 
+  count(answer)
+```
 
 
 
