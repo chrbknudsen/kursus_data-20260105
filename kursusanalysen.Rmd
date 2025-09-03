@@ -455,7 +455,7 @@ meta_data %>%
 
 Gir det mening? Næh.
 
-```{r}
+```{r opdelt-belægning}
 # Så vi prøver at dele det lidt op...
 søjlerne <- c("analysis", "cleaning", "harvesting", "visualisation")
 sprogene <- c("python", "r")
@@ -494,7 +494,7 @@ Det blev det ikke nødvendigvis mere klart af.
 
 ## Belægningsgrad pr. kategori pr år
 
-```{r}
+```{r belaeg_kat_aar}
 meta_data %>% 
   distinct(id, category_name, .keep_all = TRUE) %>% 
   filter(!str_detect(title, "værksted")) %>%
