@@ -707,7 +707,7 @@ sammenligning |>
 
 Jamen udbyder vi så ikke bare for mange pladser?
 
-Måske, men det er der vist andre der også gør.
+Måske, men det er der vist andre der også gør. 
 
 ```{r}
 sammenligning |> 
