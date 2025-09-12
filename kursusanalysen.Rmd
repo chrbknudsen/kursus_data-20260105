@@ -639,19 +639,50 @@ tilmeldinger %>%
 
 
 
-## sammenligning mellem kursuskalendere
+## Sammenligning mellem kursuskalendere
 
+Belægningsgrader og sådan. Der er vi jo nødt til at have en ide om hvordan det ser ud for andre kursuskalendere.
+
+Vi trækker ret sammenfattende data for fem kursuskalendere, for perioden 2022 til dato.
+Kurser med 
+Hvor mange kurser er det vi sammenligner imellem? Bemærk at ting i kalenderen
+hvor der ikke er angivet et antal pladser man kan tilmelde sig, er pillet fra.
+det fjerner eksempelvis alle åbne værksteder.
 
 ```{r}
 sammenligning <- read_csv2("data/summeret_alle_kursuskalendere.csv")
+# a data frame with all the annotation info
+annotation <- data.frame(
+   x = c(2024,2024.5),
+   y = c(95,50),
+   label = c("Datalab har mange kurser. Andre har flere", "Husk at 2025\n ikke er overstået endnu")
+)
+sammenligning |> 
+  select(navn, year, antal) |> 
+  ggplot(aes(x=  year, y = antal, color = navn)) +
+  geom_line() +
+  geom_text(data = annotation, aes(x,y,label=label),
+            color = "darkred")+
+  annotate("rect", xmin=c(2023.9), xmax=c(2024.1), ymin=c(70) , ymax=c(95), alpha=0.1, fill="blue")
+```
+
+Hvordan med belægningsgraden? Klarer vi os virkelig så ringe?
+```{r}
+annotation <- data.frame(
+   x = c(2024.1,2024.5),
+   y = c(.75,.50),
+   label = c("Kalendrene med færrest kurser\n har højest belægningsgrad", "Men overordnet ligger vi vist OK")
+)
 sammenligning |> 
   select(navn, year, seats, seats_taken) |> 
   mutate(belægning = seats_taken/seats) |> 
   ggplot(aes(x=year, y = belægning, color = navn)) +
   geom_line() +
-  ggtitle("belægningsgrad sammenlignet over tid mellem 5 kalendere")
-
-
+   geom_text(data = annotation, aes(x,y,label=label),
+            color = "darkred")+
+  annotate("rect", xmin=c(2024.9), xmax=c(2025.1), ymin=c(.75) , ymax=c(.77), alpha=0.1, fill="blue") +
+  annotate("segment", x = 2025, xend = 2025, y = .46, yend = .65, colour = "pink", size=1, alpha=1, arrow=arrow(ends = "both"))
+  ggtitle("belægningsgrad sammenlignet over tid mellem 5 kalendere") 
 ```
 
 Efterspørgslen:
@@ -674,4 +705,13 @@ sammenligning |>
   geom_line()
 ```
 
-Jeg ved ikke helt hvad katten der sker på Søndre Campus. Men her ligger Datalab altså også pænt...
+Jamen udbyder vi så ikke bare for mange pladser?
+
+Måske, men det er der vist andre der også gør. 
+
+```{r}
+sammenligning |> 
+  select(navn, year, seats) |> 
+  ggplot(aes(x=year, y = seats, color = navn)) +
+  geom_line()
+```
