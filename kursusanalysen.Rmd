@@ -639,3 +639,39 @@ tilmeldinger %>%
 
 
 
+## sammenligning mellem kursuskalendere
+
+
+```{r}
+sammenligning <- read_csv2("data/summeret_alle_kursuskalendere.csv")
+sammenligning |> 
+  select(navn, year, seats, seats_taken) |> 
+  mutate(belægning = seats_taken/seats) |> 
+  ggplot(aes(x=year, y = belægning, color = navn)) +
+  geom_line() +
+  ggtitle("belægningsgrad sammenlignet over tid mellem 5 kalendere")
+
+
+```
+
+Efterspørgslen:
+
+```{r}
+sammenligning |> 
+  select(navn, year, seats_taken) |> 
+  ggplot(aes(x= year, y = seats_taken, color = navn)) +
+  geom_line() +
+  ggtitle("hvor mange tilmedlinger er der - udtryk for efterspørgslen")
+```
+
+gennemsnitligt antal deltagere
+
+```{r}
+sammenligning |> 
+  select(navn, year, seats_taken, antal) |> 
+  mutate(snit = seats_taken/antal) |> 
+  ggplot(aes(x=year, y = snit, color = navn)) +
+  geom_line()
+```
+
+Jeg ved ikke helt hvad katten der sker på Søndre Campus. Men her ligger Datalab altså også pænt...
