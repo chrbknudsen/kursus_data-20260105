@@ -194,7 +194,7 @@ expand_grid(calid = calids$calid, year = years) |>
   mutate(data = pmap(list(calid, year), grab_all_events)) |> 
   unnest(data) |> 
   filter(seats != 0) |>
-  distinct(id, .keep_all = TRUE) |> 
+  distinct(id, .keep_all = TRUE) |> #husk at fjerne dubletter!
   group_by(calid, year) |> 
   summarise(antal = n(),
             seats = sum(seats),
