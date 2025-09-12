@@ -336,6 +336,27 @@ meta_data %>%
 ```
 
 
+## Antal tilmeldinger pr. kursus pr år
+
+For folk der har svært ved at læse tabeller:
+
+0 betyder ikke nødvendigvis at kurset har været en fiasko. Det kan også bare, helt enkelt, betyde
+at kurset første gang blev udbudt i 2023. Og derfor var der 0 deltagere på det endnu ikke-eksisterende kursus i
+2022.
+
+```{r}
+meta_data %>% 
+  mutate(value = 1) %>% 
+  pivot_wider(names_from = category_name, values_from = value) %>% 
+  right_join(tilm_pr_event, by = c("id" = "event_id")) %>% 
+  select(id, title, start, registrants, waitlist, seats) |> 
+  group_by(title, år = year(start))  |> 
+  summarise(registrants = sum(registrants, na.rm = TRUE)) |> 
+  pivot_wider(names_from = år, values_from = registrants, values_fill = 0) |> 
+  arrange(desc(`2025`)) |> 
+  gt()
+```
+
 ## Gennemsnitlig belægningsgrad
 Altså - hvor stor en andel af pladserne der udbydes bliver fyldt med tilmeldinger.
 Her skal vi nok fjerne de åbne værksteder først.
