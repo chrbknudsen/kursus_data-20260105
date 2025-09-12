@@ -342,7 +342,7 @@ For folk der har svært ved at læse tabeller:
 
 0 betyder ikke nødvendigvis at kurset har været en fiasko. Det kan også bare, helt enkelt, betyde
 at kurset første gang blev udbudt i 2023. Og derfor var der 0 deltagere på det endnu ikke-eksisterende kursus i
-2022
+2022.
 
 ```{r}
 meta_data %>% 
