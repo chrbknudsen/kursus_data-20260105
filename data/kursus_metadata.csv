@@ -1,4 +1,100 @@
 id;title;allday;start;end;description;public;admin;location_id;location_type;location_name;campus_id;campus_name;audience_1_id;audience_1_name;audience_2_id;audience_2_name;audience_3_id;audience_3_name;category_id;category_name;owner_id;owner_name;presenter;calendar_id;calendar_name;calendar_public;calendar_admin;seats;registration;registration_form_id;registration_series_linked;has_registration_opened;has_registration_closed;physical_seats;physical_seats_taken;online_seats;online_seats_taken;seats_taken;wait_list;color;featured_image;geolocation;registration_cost;more_info;setup_time;teardown_time;online_user_id;zoom_email;online_meeting_id;online_host_url;online_join_url;online_join_password;online_provider;campus_1
+4393263;NVivo for absolutte begyndere - på dansk;FALSE;2025-10-06T08:00:00Z;2025-10-06T10:00:00Z;"<p><em>Please note that this course is in Danish.</em></p>
+
+<p>Introduktion til NVivo - et program, der er en stor hj&aelig;lp, n&aring;r du arbejder med kvalitativ dataanalyse.</p>
+
+<p>NVivo kan v&aelig;re nyttigt, hvis du vil organisere og/eller kode dit empiriske materiale eller litteratur. Det kan ogs&aring; v&aelig;re nyttigt, n&aring;r du vil transskribere lyd- eller videofiler, generere hypoteser osv.</p>
+
+<p>PC-versionen af NVivo har flere funktioner end Mac-versionen, men du kan deltage i alle &oslash;velser med begge, og vi vil demonstrere i begge</p>
+
+<p>&nbsp;</p>
+
+<p><b>Forberedelse f&oslash;r kurset:</b><br />
+Inden kurset bedes du forberede f&oslash;lgende:</p>
+
+<p>1. <strong>Download de filer</strong>, vi skal bruge under kurset, og gem dem p&aring; din computer et sted, hvor du nemt kan finde dem. Du finder dem&nbsp;<strong><a href=""https://absalon.ku.dk/courses/88011/files"" target=""_blank"">HERE</a>.</strong></p>
+
+<p>2. <strong>Installer NVivo 14 eller NVivo 15.</strong> Installationen kan v&aelig;re vanskelig. L&aelig;s instruktionerne nedenfor omhyggeligt og giv dig selv god tid til at installere programmet. Hvis du har problemer med at installere NVivo, er du meget velkommen til at <a href=""https://kubkalender.kb.dk/event/4216765"">kigge forbi biblioteket</a> p&aring; N&oslash;rre all&eacute; hver onsdag mellem 12:30 og 14:30. Forvent ikke, at vi har tid til at hj&aelig;lpe med installationen under kurset.</p>
+
+<p>Download Nvivo for Windows:<br />
+NVivo 14:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe</a><br />
+NVivo 15:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo15/NVivo.x64.exe"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo15/NVivo.x64.exe</a></p>
+
+<p>Download NVivo for Mac:<br />
+NVivo 14<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo14forMac/NVivo.dmg"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo14forMac/NVivo.dmg</a><br />
+NVivo 15:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo15forMac/NVivo.dmg"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo15forMac/NVivo.dmg</a></p>
+
+<p>Du skal tilf&oslash;je en registreringsn&oslash;gle (licensn&oslash;gle) for at aktivere programmet efter download. N&oslash;glen er tilg&aelig;ngelig gennem&nbsp;<a href=""https://kunet.ku.dk/self-service/Pages/Software-library.aspx"" target=""_blank"">KU&#39;s softwarebibliotek</a>. Det er den samme n&oslash;gle for b&aring;de NVivo 14 og 15. N&aring;r du er i Softwarebiblioteket, skal du klikke p&aring; &quot;QSR International - NVivo&quot; og acceptere betingelserne. Klik p&aring; &quot;Licensn&oslash;gle&quot; for at f&aring; n&oslash;glen og klik p&aring; &quot;Vejledning&quot; for at downloade en PDF med installationsinstruktioner.</p>
+
+<p>&nbsp;</p>";https://kubkalender.kb.dk/event/4393263;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4393263;14344;0;Faculty of Humanities: Karen Blixens Plads 8 - Room: 4A.1.46 (building 4A, first floor, room 46);39;KUB South Campus, Karen Blixens Plads 7, 2300 København S;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;33562;Analysis;38777;Lorna Wildgaard;Benjamin Derksen, Erik Schwägermann & Lorna Wildgaard;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;TRUE;30;12;0;0;12;TRUE;#18E0F2;https://lcimages-eu.s3.amazonaws.com/data/feat_img/1069/6416/1674211150.jpg;NA;0;NA;0;0;NA;NA;NA;NA;NA;NA;NA;NA
+4393263;NVivo for absolutte begyndere - på dansk;FALSE;2025-10-06T08:00:00Z;2025-10-06T10:00:00Z;"<p><em>Please note that this course is in Danish.</em></p>
+
+<p>Introduktion til NVivo - et program, der er en stor hj&aelig;lp, n&aring;r du arbejder med kvalitativ dataanalyse.</p>
+
+<p>NVivo kan v&aelig;re nyttigt, hvis du vil organisere og/eller kode dit empiriske materiale eller litteratur. Det kan ogs&aring; v&aelig;re nyttigt, n&aring;r du vil transskribere lyd- eller videofiler, generere hypoteser osv.</p>
+
+<p>PC-versionen af NVivo har flere funktioner end Mac-versionen, men du kan deltage i alle &oslash;velser med begge, og vi vil demonstrere i begge</p>
+
+<p>&nbsp;</p>
+
+<p><b>Forberedelse f&oslash;r kurset:</b><br />
+Inden kurset bedes du forberede f&oslash;lgende:</p>
+
+<p>1. <strong>Download de filer</strong>, vi skal bruge under kurset, og gem dem p&aring; din computer et sted, hvor du nemt kan finde dem. Du finder dem&nbsp;<strong><a href=""https://absalon.ku.dk/courses/88011/files"" target=""_blank"">HERE</a>.</strong></p>
+
+<p>2. <strong>Installer NVivo 14 eller NVivo 15.</strong> Installationen kan v&aelig;re vanskelig. L&aelig;s instruktionerne nedenfor omhyggeligt og giv dig selv god tid til at installere programmet. Hvis du har problemer med at installere NVivo, er du meget velkommen til at <a href=""https://kubkalender.kb.dk/event/4216765"">kigge forbi biblioteket</a> p&aring; N&oslash;rre all&eacute; hver onsdag mellem 12:30 og 14:30. Forvent ikke, at vi har tid til at hj&aelig;lpe med installationen under kurset.</p>
+
+<p>Download Nvivo for Windows:<br />
+NVivo 14:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe</a><br />
+NVivo 15:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo15/NVivo.x64.exe"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo15/NVivo.x64.exe</a></p>
+
+<p>Download NVivo for Mac:<br />
+NVivo 14<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo14forMac/NVivo.dmg"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo14forMac/NVivo.dmg</a><br />
+NVivo 15:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo15forMac/NVivo.dmg"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo15forMac/NVivo.dmg</a></p>
+
+<p>Du skal tilf&oslash;je en registreringsn&oslash;gle (licensn&oslash;gle) for at aktivere programmet efter download. N&oslash;glen er tilg&aelig;ngelig gennem&nbsp;<a href=""https://kunet.ku.dk/self-service/Pages/Software-library.aspx"" target=""_blank"">KU&#39;s softwarebibliotek</a>. Det er den samme n&oslash;gle for b&aring;de NVivo 14 og 15. N&aring;r du er i Softwarebiblioteket, skal du klikke p&aring; &quot;QSR International - NVivo&quot; og acceptere betingelserne. Klik p&aring; &quot;Licensn&oslash;gle&quot; for at f&aring; n&oslash;glen og klik p&aring; &quot;Vejledning&quot; for at downloade en PDF med installationsinstruktioner.</p>
+
+<p>&nbsp;</p>";https://kubkalender.kb.dk/event/4393263;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4393263;14344;0;Faculty of Humanities: Karen Blixens Plads 8 - Room: 4A.1.46 (building 4A, first floor, room 46);39;KUB South Campus, Karen Blixens Plads 7, 2300 København S;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;33564;English;38777;Lorna Wildgaard;Benjamin Derksen, Erik Schwägermann & Lorna Wildgaard;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;TRUE;30;12;0;0;12;TRUE;#18E0F2;https://lcimages-eu.s3.amazonaws.com/data/feat_img/1069/6416/1674211150.jpg;NA;0;NA;0;0;NA;NA;NA;NA;NA;NA;NA;NA
+4393263;NVivo for absolutte begyndere - på dansk;FALSE;2025-10-06T08:00:00Z;2025-10-06T10:00:00Z;"<p><em>Please note that this course is in Danish.</em></p>
+
+<p>Introduktion til NVivo - et program, der er en stor hj&aelig;lp, n&aring;r du arbejder med kvalitativ dataanalyse.</p>
+
+<p>NVivo kan v&aelig;re nyttigt, hvis du vil organisere og/eller kode dit empiriske materiale eller litteratur. Det kan ogs&aring; v&aelig;re nyttigt, n&aring;r du vil transskribere lyd- eller videofiler, generere hypoteser osv.</p>
+
+<p>PC-versionen af NVivo har flere funktioner end Mac-versionen, men du kan deltage i alle &oslash;velser med begge, og vi vil demonstrere i begge</p>
+
+<p>&nbsp;</p>
+
+<p><b>Forberedelse f&oslash;r kurset:</b><br />
+Inden kurset bedes du forberede f&oslash;lgende:</p>
+
+<p>1. <strong>Download de filer</strong>, vi skal bruge under kurset, og gem dem p&aring; din computer et sted, hvor du nemt kan finde dem. Du finder dem&nbsp;<strong><a href=""https://absalon.ku.dk/courses/88011/files"" target=""_blank"">HERE</a>.</strong></p>
+
+<p>2. <strong>Installer NVivo 14 eller NVivo 15.</strong> Installationen kan v&aelig;re vanskelig. L&aelig;s instruktionerne nedenfor omhyggeligt og giv dig selv god tid til at installere programmet. Hvis du har problemer med at installere NVivo, er du meget velkommen til at <a href=""https://kubkalender.kb.dk/event/4216765"">kigge forbi biblioteket</a> p&aring; N&oslash;rre all&eacute; hver onsdag mellem 12:30 og 14:30. Forvent ikke, at vi har tid til at hj&aelig;lpe med installationen under kurset.</p>
+
+<p>Download Nvivo for Windows:<br />
+NVivo 14:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe</a><br />
+NVivo 15:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo15/NVivo.x64.exe"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo15/NVivo.x64.exe</a></p>
+
+<p>Download NVivo for Mac:<br />
+NVivo 14<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo14forMac/NVivo.dmg"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo14forMac/NVivo.dmg</a><br />
+NVivo 15:<br />
+<a href=""https://download.qsrinternational.com/Software/NVivo15forMac/NVivo.dmg"" target=""_blank"">https://download.qsrinternational.com/Software/NVivo15forMac/NVivo.dmg</a></p>
+
+<p>Du skal tilf&oslash;je en registreringsn&oslash;gle (licensn&oslash;gle) for at aktivere programmet efter download. N&oslash;glen er tilg&aelig;ngelig gennem&nbsp;<a href=""https://kunet.ku.dk/self-service/Pages/Software-library.aspx"" target=""_blank"">KU&#39;s softwarebibliotek</a>. Det er den samme n&oslash;gle for b&aring;de NVivo 14 og 15. N&aring;r du er i Softwarebiblioteket, skal du klikke p&aring; &quot;QSR International - NVivo&quot; og acceptere betingelserne. Klik p&aring; &quot;Licensn&oslash;gle&quot; for at f&aring; n&oslash;glen og klik p&aring; &quot;Vejledning&quot; for at downloade en PDF med installationsinstruktioner.</p>
+
+<p>&nbsp;</p>";https://kubkalender.kb.dk/event/4393263;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4393263;14344;0;Faculty of Humanities: Karen Blixens Plads 8 - Room: 4A.1.46 (building 4A, first floor, room 46);39;KUB South Campus, Karen Blixens Plads 7, 2300 København S;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;32027;Datalab;38777;Lorna Wildgaard;Benjamin Derksen, Erik Schwägermann & Lorna Wildgaard;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;TRUE;30;12;0;0;12;TRUE;#18E0F2;https://lcimages-eu.s3.amazonaws.com/data/feat_img/1069/6416/1674211150.jpg;NA;0;NA;0;0;NA;NA;NA;NA;NA;NA;NA;NA
 4391824;R for Absolute Beginners;FALSE;2025-10-03T07:00:00Z;2025-10-03T09:00:00Z;"<p>R is a general programming language, especially suited for statistical analysis and cleaning and visualization of data.</p>
 
 <p>We assume absolutely no previous experience with programming, and will cover the basics of getting started with R, including:</p>
