@@ -1,4 +1,19 @@
 id;title;allday;start;end;created;description;public;admin;location_id;location_type;location_name;campus_id;campus_name;audience_1_id;audience_1_name;audience_2_id;audience_2_name;audience_3_id;audience_3_name;category_id;category_name;owner_id;owner_name;presenter;calendar_id;calendar_name;calendar_public;calendar_admin;seats;registration;registration_form_id;registration_series_linked;has_registration_opened;registration_open_at;has_registration_closed;registration_close_at;physical_seats;physical_seats_taken;online_seats;online_seats_taken;seats_taken;wait_list;color;featured_image;geolocation;registration_cost;more_info;setup_time;teardown_time;online_user_id;zoom_email;online_meeting_id;online_host_url;online_join_url;online_join_password;online_provider;campus_1
+4437639;Transskribering af lydfiler med Transcriber;FALSE;2025-10-30T12:00:00Z;2025-10-30T13:30:00Z;2025-09-23T10:38:43Z;"<p><span style=""font-size:12pt""><span new="""" roman="""" style=""font-family:"" times=""""></span></span></p>
+
+<p><span style=""font-size:12pt""><span new="""" roman="""" style=""font-family:"" times="""">Workshoppen er en gennemgang af, hvordan du kommer i gang med at anvende Transcriber til at transskribere dine lydfiler, f.eks. interviews. Efterf&oslash;lgende kan du selv pr&oslash;ve kr&aelig;fter med programmet, og vi er der til at hj&aelig;lpe dig i gang.&nbsp;</span></span></p>
+
+<p><span style=""font-size:12pt""><span new="""" roman="""" style=""font-family:"" times="""">Installationen af Whisper ligger p&aring; et <a href=""https://cloud.sdu.dk/app/login"" style=""color:blue; text-decoration:underline"">Ucloud</a>, hvor der er adgang via WAYF, og hvor dine data er i sikkerhed.&nbsp;</span></span></p>
+
+<p><span style=""font-size:12pt""><span new="""" roman="""" style=""font-family:"" times="""">Vi har en lydfil, som vi bruger p&aring; kurset, s&aring; du beh&oslash;ver ikke at medbringe dine egne data.&nbsp;</span></span></p>
+
+<p><span style=""font-size:12pt""><span new="""" roman="""" style=""font-family:"" times="""">Kursusmaterialet stammer oprindeligt fra AUL-BSS Datalab, som ogs&aring; har skrevet guides, som du kan bruge. <a href=""https://github.com/AUL-BSS-Datalab/FraTaleTilTekst/tree/main/Guide"" style=""color:blue; text-decoration:underline"" target=""_blank"">L&aelig;s mere om materialet p&aring; denne side.</a>&nbsp;</span></span></p>
+
+<p><span style=""font-size:12pt""><span new="""" roman="""" style=""font-family:"" times=""""><strong>Relateret libGuide: </strong><a href=""https://kub.kb.dk/c.php?g=687759"" style=""color:blue; text-decoration:underline"">KUB Datalab</a> &nbsp;</span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span calibri="""" style=""font-family:""></span></span></span></p>
+
+<p><span style=""font-size:12pt""><span new="""" roman="""" style=""font-family:"" times=""""> </span></span></p>";https://kubkalender.kb.dk/event/4437639;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4437639;98;0;Library Lighthouse, zone 1;41;KUB North Campus, Nørre Allé 49, 2200 København N;NA;NA;NA;NA;NA;NA;32027;Datalab;330;Anne Bagger;Anne Bagger & Søren Davidsen;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;20;TRUE;0;FALSE;TRUE;2025-09-23T10:38:43Z;TRUE;2025-10-30T12:00:00Z;20;5;0;0;5;TRUE;#18E0F2;NA;NA;0;NA;0;0;NA;NA;NA;NA;NA;NA;NA;NA
 4381965;Python for Absolute Beginners pt. 1;FALSE;2025-10-29T08:30:00Z;2025-10-29T11:30:00Z;2025-06-03T08:18:35Z;"<p><br />
 <strong>Note:&nbsp;This is part 1 of 2. You can find part 2 in our course calendar:</strong><br />
 <a href=""https://kubkalender.kb.dk/calendar/datalab"" target=""_blank"">https://kubkalender.kb.dk/calendar/datalab</a></p>
