@@ -1,4 +1,27 @@
 id;title;allday;start;end;created;description;public;admin;location_id;location_type;location_name;campus_id;campus_name;audience_1_id;audience_1_name;audience_2_id;audience_2_name;audience_3_id;audience_3_name;category_id;category_name;owner_id;owner_name;presenter;calendar_id;calendar_name;calendar_public;calendar_admin;seats;registration;registration_form_id;registration_series_linked;has_registration_opened;registration_open_at;has_registration_closed;registration_close_at;physical_seats;physical_seats_taken;online_seats;online_seats_taken;seats_taken;wait_list;color;featured_image;geolocation;registration_cost;more_info;setup_time;teardown_time;online_user_id;zoom_email;online_meeting_id;online_host_url;online_join_url;online_join_password;online_provider;campus_1
+4449210;Data Sprint: Følelser, smag og litterær kultur;FALSE;2025-11-06T11:00:00Z;2025-11-06T14:00:00Z;2025-10-08T08:32:18Z;"<p>Hvordan kan man bruge sprogmodeller til at unders&oslash;ge litteratur? Forskere fra KU og AU inviterer sammen med KUB Datalab til en eftermiddags-workshop, hvor vi udforsker nogle af de nye metoder fra digitale litteraturstudier.</p>
+
+<p>I denne data sprint arbejder vi med et helt nyt korpus af dansk samtidslitteratur og unders&oslash;ger, hvordan f&oslash;lelser udtrykkes i popul&aelig;r vs. prisvindende litteratur. Gennem introduktion til metoden sentimentanalyse &ndash; og uden krav om kendskab til programmering &ndash; f&aring;r deltagerne hands-on erfaring med, hvordan digitale v&aelig;rkt&oslash;jer kan &aring;bne nye perspektiver p&aring; litter&aelig;r kultur, smag og f&oslash;lelser.</p>
+
+<p>Tid og sted:<br />
+Torsdag d. 6. november, kl 12-15<br />
+KUA1 27.0.17</p>
+
+<p>Tilmelding er ikke p&aring;kr&aelig;vet &ndash; man m&oslash;der bare op!</p>
+
+<p><strong>Arrangementet er henvendt studerende p&aring; Det Humanistiske Fakultet.</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Arrang&oslash;rer:</strong></p>
+
+<p>- Kirstine Nielsen Degn, Alexander Conroy og Jens Bjerring-Hansen, NorS, KU</p>
+
+<p>- Daniel Hershcovich og Karl-Emil Kj&aelig;r Bilstrup, DIKU, KU</p>
+
+<p>- Lars Kj&aelig;r, KUB Datalab</p>
+
+<p>&nbsp;</p>";https://kubkalender.kb.dk/event/4449210;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4449210;0;0;NA;39;KUB South Campus, Karen Blixens Plads 7, 2300 København S;NA;NA;NA;NA;NA;NA;32027;Datalab;9876;Lars Kjær;NA;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;NA;FALSE;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;#18E0F2;https://dbjywyrc2efmd.cloudfront.net/data/feat_img/1069/6416/1759912267.png;NA;0;NA;0;0;NA;NA;NA;NA;NA;NA;NA;NA
 4381968;Python for Absolute Beginners pt. 2;FALSE;2025-11-05T08:30:00Z;2025-11-05T12:00:00Z;2025-06-03T08:20:57Z;"<p><br />
 <strong>Note:&nbsp;This is part 2&nbsp;of 2. You can find part 1&nbsp;in our course calendar:</strong><br />
 <a href=""https://kubkalender.kb.dk/calendar/datalab"" target=""_blank"">https://kubkalender.kb.dk/calendar/datalab</a></p>
