@@ -6,7 +6,7 @@ calid;year;antal;seats;seats_taken;navn
 55;2022;32;944;329;city
 55;2023;49;1419;471;city
 55;2024;31;922;256;city
-55;2025;15;321;133;city
+55;2025;16;341;135;city
 6416;2022;67;1422;815;datalab
 6416;2023;74;1725;936;datalab
 6416;2024;76;1824;1197;datalab
@@ -18,4 +18,4 @@ calid;year;antal;seats;seats_taken;navn
 7422;2022;10;300;153;The libraris formerly known as Nørre Alle and DVJB
 7422;2023;76;3297;1080;The libraris formerly known as Nørre Alle and DVJB
 7422;2024;94;3723;1031;The libraris formerly known as Nørre Alle and DVJB
-7422;2025;86;2912;997;The libraris formerly known as Nørre Alle and DVJB
+7422;2025;89;2977;1009;The libraris formerly known as Nørre Alle and DVJB
