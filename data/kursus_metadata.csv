@@ -1,4 +1,94 @@
 id;title;allday;start;end;created;description;public;admin;location_id;location_type;location_name;campus_id;campus_name;category_id;category_name;owner_id;owner_name;presenter;calendar_id;calendar_name;calendar_public;calendar_admin;seats;registration;registration_form_id;registration_series_linked;has_registration_opened;registration_open_at;has_registration_closed;registration_close_at;physical_seats;physical_seats_taken;online_seats;online_seats_taken;seats_taken;wait_list;color;featured_image;geolocation;registration_cost;more_info;setup_time;teardown_time;audience_1_id;audience_1_name;audience_2_id;audience_2_name;audience_3_id;audience_3_name;online_user_id;zoom_email;online_meeting_id;online_host_url;online_join_url;online_join_password;online_provider;campus_1
+4455591;R for Absolute Beginners (Christmas edition);FALSE;2025-12-16T12:00:00Z;2025-12-16T14:00:00Z;2025-10-24T09:00:47Z;"<p>R is a general programming language, especially suited for statistical analysis and cleaning and visualization of data.🎄</p>
+
+<p>We assume absolutely no previous experience with programming, and will cover the basics of getting started with R, including:</p>
+
+<ul>
+	<li>Navigating in RStudio, and how to interact with R</li>
+	<li>Datatypes, variables and objects</li>
+	<li>Simple arithmetic and logical operations on data</li>
+	<li>Working with functions - and how to write a very simple function ourself</li>
+	<li>Import data into R</li>
+	<li>Summary statistics&nbsp;</li>
+	<li>Manipulating data frames</li>
+	<li>And how to make a couple of the common graphs, that are as useful as they are elementary.</li>
+</ul>
+
+<p>In preparation for the course, we recommend that you either download and install R and RStudio, or register for an account at rstudio.cloud. Instructions on this can be found <a href=""https://kubdatalab.github.io/R-intro/setup.html"">here</a>, where you will also find the course notes, additional material and exercises.</p>
+
+<p>Please note that this course will be held in english if any participants requests it. Otherwise it will be held in danish.&nbsp;🎅</p>";https://kubkalender.kb.dk/event/4455591;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4455591;21573;2;Library Lighthouse, Zone 1;41;KUB North Campus, Nørre Allé 49, 2200 København N;33562;Analysis;16332;Christian Knudsen;Søren Davidsen & Christian Knudsen;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;2025-10-24T09:00:47Z;TRUE;2025-12-14T12:00:00Z;30;30;0;0;30;TRUE;#18E0F2;https://dbjywyrc2efmd.cloudfront.net/data/feat_img/1069/6416/1761296409.png;ChIJ8VHldVVSUkYRgK6z4Au1dyg;0;NA;0;0;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+4455591;R for Absolute Beginners (Christmas edition);FALSE;2025-12-16T12:00:00Z;2025-12-16T14:00:00Z;2025-10-24T09:00:47Z;"<p>R is a general programming language, especially suited for statistical analysis and cleaning and visualization of data.🎄</p>
+
+<p>We assume absolutely no previous experience with programming, and will cover the basics of getting started with R, including:</p>
+
+<ul>
+	<li>Navigating in RStudio, and how to interact with R</li>
+	<li>Datatypes, variables and objects</li>
+	<li>Simple arithmetic and logical operations on data</li>
+	<li>Working with functions - and how to write a very simple function ourself</li>
+	<li>Import data into R</li>
+	<li>Summary statistics&nbsp;</li>
+	<li>Manipulating data frames</li>
+	<li>And how to make a couple of the common graphs, that are as useful as they are elementary.</li>
+</ul>
+
+<p>In preparation for the course, we recommend that you either download and install R and RStudio, or register for an account at rstudio.cloud. Instructions on this can be found <a href=""https://kubdatalab.github.io/R-intro/setup.html"">here</a>, where you will also find the course notes, additional material and exercises.</p>
+
+<p>Please note that this course will be held in english if any participants requests it. Otherwise it will be held in danish.&nbsp;🎅</p>";https://kubkalender.kb.dk/event/4455591;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4455591;21573;2;Library Lighthouse, Zone 1;41;KUB North Campus, Nørre Allé 49, 2200 København N;33561;Cleaning;16332;Christian Knudsen;Søren Davidsen & Christian Knudsen;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;2025-10-24T09:00:47Z;TRUE;2025-12-14T12:00:00Z;30;30;0;0;30;TRUE;#18E0F2;https://dbjywyrc2efmd.cloudfront.net/data/feat_img/1069/6416/1761296409.png;ChIJ8VHldVVSUkYRgK6z4Au1dyg;0;NA;0;0;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+4455591;R for Absolute Beginners (Christmas edition);FALSE;2025-12-16T12:00:00Z;2025-12-16T14:00:00Z;2025-10-24T09:00:47Z;"<p>R is a general programming language, especially suited for statistical analysis and cleaning and visualization of data.🎄</p>
+
+<p>We assume absolutely no previous experience with programming, and will cover the basics of getting started with R, including:</p>
+
+<ul>
+	<li>Navigating in RStudio, and how to interact with R</li>
+	<li>Datatypes, variables and objects</li>
+	<li>Simple arithmetic and logical operations on data</li>
+	<li>Working with functions - and how to write a very simple function ourself</li>
+	<li>Import data into R</li>
+	<li>Summary statistics&nbsp;</li>
+	<li>Manipulating data frames</li>
+	<li>And how to make a couple of the common graphs, that are as useful as they are elementary.</li>
+</ul>
+
+<p>In preparation for the course, we recommend that you either download and install R and RStudio, or register for an account at rstudio.cloud. Instructions on this can be found <a href=""https://kubdatalab.github.io/R-intro/setup.html"">here</a>, where you will also find the course notes, additional material and exercises.</p>
+
+<p>Please note that this course will be held in english if any participants requests it. Otherwise it will be held in danish.&nbsp;🎅</p>";https://kubkalender.kb.dk/event/4455591;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4455591;21573;2;Library Lighthouse, Zone 1;41;KUB North Campus, Nørre Allé 49, 2200 København N;33564;English;16332;Christian Knudsen;Søren Davidsen & Christian Knudsen;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;2025-10-24T09:00:47Z;TRUE;2025-12-14T12:00:00Z;30;30;0;0;30;TRUE;#18E0F2;https://dbjywyrc2efmd.cloudfront.net/data/feat_img/1069/6416/1761296409.png;ChIJ8VHldVVSUkYRgK6z4Au1dyg;0;NA;0;0;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+4455591;R for Absolute Beginners (Christmas edition);FALSE;2025-12-16T12:00:00Z;2025-12-16T14:00:00Z;2025-10-24T09:00:47Z;"<p>R is a general programming language, especially suited for statistical analysis and cleaning and visualization of data.🎄</p>
+
+<p>We assume absolutely no previous experience with programming, and will cover the basics of getting started with R, including:</p>
+
+<ul>
+	<li>Navigating in RStudio, and how to interact with R</li>
+	<li>Datatypes, variables and objects</li>
+	<li>Simple arithmetic and logical operations on data</li>
+	<li>Working with functions - and how to write a very simple function ourself</li>
+	<li>Import data into R</li>
+	<li>Summary statistics&nbsp;</li>
+	<li>Manipulating data frames</li>
+	<li>And how to make a couple of the common graphs, that are as useful as they are elementary.</li>
+</ul>
+
+<p>In preparation for the course, we recommend that you either download and install R and RStudio, or register for an account at rstudio.cloud. Instructions on this can be found <a href=""https://kubdatalab.github.io/R-intro/setup.html"">here</a>, where you will also find the course notes, additional material and exercises.</p>
+
+<p>Please note that this course will be held in english if any participants requests it. Otherwise it will be held in danish.&nbsp;🎅</p>";https://kubkalender.kb.dk/event/4455591;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4455591;21573;2;Library Lighthouse, Zone 1;41;KUB North Campus, Nørre Allé 49, 2200 København N;36627;R;16332;Christian Knudsen;Søren Davidsen & Christian Knudsen;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;2025-10-24T09:00:47Z;TRUE;2025-12-14T12:00:00Z;30;30;0;0;30;TRUE;#18E0F2;https://dbjywyrc2efmd.cloudfront.net/data/feat_img/1069/6416/1761296409.png;ChIJ8VHldVVSUkYRgK6z4Au1dyg;0;NA;0;0;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+4455591;R for Absolute Beginners (Christmas edition);FALSE;2025-12-16T12:00:00Z;2025-12-16T14:00:00Z;2025-10-24T09:00:47Z;"<p>R is a general programming language, especially suited for statistical analysis and cleaning and visualization of data.🎄</p>
+
+<p>We assume absolutely no previous experience with programming, and will cover the basics of getting started with R, including:</p>
+
+<ul>
+	<li>Navigating in RStudio, and how to interact with R</li>
+	<li>Datatypes, variables and objects</li>
+	<li>Simple arithmetic and logical operations on data</li>
+	<li>Working with functions - and how to write a very simple function ourself</li>
+	<li>Import data into R</li>
+	<li>Summary statistics&nbsp;</li>
+	<li>Manipulating data frames</li>
+	<li>And how to make a couple of the common graphs, that are as useful as they are elementary.</li>
+</ul>
+
+<p>In preparation for the course, we recommend that you either download and install R and RStudio, or register for an account at rstudio.cloud. Instructions on this can be found <a href=""https://kubdatalab.github.io/R-intro/setup.html"">here</a>, where you will also find the course notes, additional material and exercises.</p>
+
+<p>Please note that this course will be held in english if any participants requests it. Otherwise it will be held in danish.&nbsp;🎅</p>";https://kubkalender.kb.dk/event/4455591;https://kubkalender.kb.dk/aevent.php?c=6416&m=edit&event_id=4455591;21573;2;Library Lighthouse, Zone 1;41;KUB North Campus, Nørre Allé 49, 2200 København N;32027;Datalab;16332;Christian Knudsen;Søren Davidsen & Christian Knudsen;6416;KUB Datalab;https://kubkalender.kb.dk/calendar/datalab;https://kubkalender.kb.dk/admin/calendar/6416;30;TRUE;5673;FALSE;TRUE;2025-10-24T09:00:47Z;TRUE;2025-12-14T12:00:00Z;30;30;0;0;30;TRUE;#18E0F2;https://dbjywyrc2efmd.cloudfront.net/data/feat_img/1069/6416/1761296409.png;ChIJ8VHldVVSUkYRgK6z4Au1dyg;0;NA;0;0;1021;Level 1 - Beginner / Begynder;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
 4459887;Python for Absolute Beginners pt. 2;FALSE;2025-12-15T08:30:00Z;2025-12-15T12:00:00Z;2025-11-12T12:20:06Z;"<p><br />
 <strong>Note:&nbsp;This is part 2&nbsp;of 2. You can find part 1&nbsp;in our course calendar:</strong><br />
 <a href=""https://kubkalender.kb.dk/calendar/datalab"" target=""_blank"">https://kubkalender.kb.dk/calendar/datalab</a></p>
