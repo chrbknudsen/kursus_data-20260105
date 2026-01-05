@@ -185,7 +185,7 @@ calids <- tribble(~navn, ~calid,
 "city", 55,
 "datalab", 6416,
 "forskerservice", 6646,
-"The libraris formerly known as Nørre Alle and DVJB", 7422,
+"The libraries formerly known as Nørre Alle and DVJB", 7422,
 "SC", 54)
 
 years <- 2022:year(today())
