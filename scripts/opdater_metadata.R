@@ -143,7 +143,9 @@ get_all_events <- function(calid, year){
 
 
 
-prep_all_events <- function(df){df |> 
+prep_all_events <- function(df){
+  if(nrow(df) ==0){return(tibble())}
+  df |> 
   unnest_wider(events) %>% 
   select(-any_of("future_dates")) %>% 
   filter(as_datetime(end) < now()) %>% 
@@ -190,8 +192,16 @@ calids <- tribble(~navn, ~calid,
 
 years <- 2022:year(today())
 
+
 expand_grid(calid = calids$calid, year = years) |> 
   mutate(data = pmap(list(calid, year), grab_all_events)) |> 
+   mutate(
+    data = map(data, \(df) {
+      if (!"geolocation" %in% names(df)) df$geolocation <- NA_character_
+      df$geolocation <- as.character(df$geolocation)
+      df
+    })
+  ) |> 
   unnest(data) |> 
   filter(seats != 0) |> 
   distinct(id, .keep_all = TRUE) |> #husk at fjerne dubletter!
