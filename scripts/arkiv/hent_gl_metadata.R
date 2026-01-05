@@ -87,7 +87,7 @@ meta_data <- bind_rows(data_2021, data_2022, data_2023, data_2024, data_2025)
 
 # 556
 meta_data <- meta_data %>% 
-  select(-c(attendance, future_dates)) %>% 
+  select(-any_of("attendance", "future_dates")) %>% 
   filter(as_datetime(end) < now()) %>% 
   unnest_wider(url) %>% 
   unnest_wider(location, names_sep = "_") %>% 
