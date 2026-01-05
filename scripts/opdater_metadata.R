@@ -21,7 +21,7 @@ kalender_id <- cal_id
 
 meta_data <- read_csv2("data/kursus_metadata.csv")
 
-if(here::here() == "C:/Users/cbk/Documents/R_projekter/kursus_data"){
+if(startsWith(here::here(), "C:/Users/cbk")){
   client_secret <- keyring::key_get("libcal")
 }else{
   client_secret <- Sys.getenv("CLIENT_SECRET")
@@ -73,7 +73,7 @@ data <- get_events(kalender_id, i) %>%
 
 
 nye_meta_data <- data %>% unnest_wider(events) %>% 
-  select(-c(future_dates)) %>% 
+  select(-any_of("future_dates")) %>% 
   filter(as_datetime(end) < now()) %>% 
   unnest_wider(url) %>% 
   unnest_wider(location, names_sep = "_") %>% 
@@ -145,7 +145,7 @@ get_all_events <- function(calid, year){
 
 prep_all_events <- function(df){df |> 
   unnest_wider(events) %>% 
-  select(-c(future_dates)) %>% 
+  select(-any_of("future_dates")) %>% 
   filter(as_datetime(end) < now()) %>% 
   unnest_wider(url) %>% 
   unnest_wider(location, names_sep = "_") %>% 
@@ -174,7 +174,7 @@ prep_all_events <- function(df){df |>
   unnest_wider(category, names_sep = "_") }
 
 get_all_events(55, 2024) |> 
-  prep_all_events() |> view()
+  prep_all_events()
 
 grab_all_events <- function(calid, year){
   get_all_events(calid, year) |> 
